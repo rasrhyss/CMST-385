@@ -1,0 +1,35 @@
+CMST 385
+
+CMST385-rward74
+
+CMST385-rward74 - Zip Deploy
+
+on:
+
+  push:
+
+    branches:
+
+      - main
+
+jobs:
+
+  build-and-deploy:
+
+    runs-on: windows-latest
+
+     steps:
+
+    - uses: actions/checkout@main
+
+    - name: Deploy to Azure Web App
+
+      uses: azure/webapps-deploy@v1
+
+      with:
+
+  CMST385-rward74
+
+        slot-name: 'production'
+
+      CMST385-rward74 - Zip Deploy
